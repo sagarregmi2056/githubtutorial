@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(129, 122, 195);
+}
+/*  */
+
+
+.left-dabba{
+    background-color: skyblue;
+    text-align: center;
+    color: aliceblue;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 10px;
+
+}
+ .thulodabba .left-dabba h2{
+    color: red;
+}
+
+
+
+
+
+.right-dabba{
+    background-color: red;
+    text-align: center;
+  padding: 30px;
+  margin-right: 10px;
+}
+.right-dabba h2{
+    padding-bottom: 10px;
+}
+ 
+
+.thulodabba .right-dabba label{
+    color: rgb(60, 10, 139);
+}
+
+
+.thulodabba{
+    display: flex;
+    
+    justify-content: center;
+    margin: 10px;
+    padding-top: 30px;
+    
+   
+}

@@ -1,0 +1,97 @@
+
+  body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
+  }
+
+  *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+
+
+  .topbar{
+    background-color: rgb(5, 5, 74);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+
+  }
+  .topbar p{
+    margin-left: 20px;
+
+
+  }
+  .topbar i{
+    margin-right: 40px;
+    font-size: 30px;
+  }
+  .topbar i:hover{
+    cursor: pointer;
+   color: orange;
+   transition: 4s;
+   
+  }
+
+
+.navbar{
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+.donation button {
+    color: white;
+    background-color: rgb(255, 134, 5);
+  border-style: none;
+  padding: 10px;
+  margin-right: 20px;
+
+}
+.donation button:hover{
+    background-color: rgb(6, 6, 101);
+    cursor: pointer;
+    transition: 3s ;
+}
+
+.navlink ul{
+    list-style: none;
+   display: flex;
+   justify-content: space-between;
+
+}
+.navbar li{
+    padding: 10px;
+}
+
+.navbar a:hover{
+   color: rgb(2, 22, 69);
+    cursor: pointer;
+   
+}
+
+
+.navlink a{
+    text-decoration: none;
+  
+}
+
+
+
+
+
+  
+  
