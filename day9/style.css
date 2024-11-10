@@ -1,0 +1,22 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.top{
+    background-color: chocolate;
+    position: fixed;
+    bottom: 3%;
+    
+    right: 3%;
+    padding: 10px;
+    z-index: 100;
+}
+.top:hover{
+    cursor: pointer;
+}
+
+.top a{
+    text-decoration: none;
+    color: white;
+}
+
