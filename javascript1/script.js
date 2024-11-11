@@ -32,3 +32,8 @@ var topper7 = topper5.toString();
 
 sum = toper6 + topper7;
 console.log(sum);
+
+// git status
+// git add .
+// git commit -m "first commit"
+// git push origin main
