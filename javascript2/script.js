@@ -81,3 +81,4 @@
 // sabai age lai sum print
 // sum of 10 number subtract, multiply, divide, modulus
 // afno bareyma print
+// typeof ko print
