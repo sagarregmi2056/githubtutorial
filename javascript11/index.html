@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>welcome to our website </h1>
+    <h1>Feed </h1>
+    <div>
+        <p>title</p>
+        <p id="post"></p>
+        
+    </div>
+
+
+
+    <script>
+   //https://newsapi.org/docs/get-started
+
+
+            fetch("https://newsapi.org/v2/top-headlines?country=us&apiKey=ff17a033d1a245698f17e1cda67f17f6")
+            .then(response=>
+                response.json()
+            )
+
+            //promise 
+            .then(data=>{
+
+
+
+                var nayaapi = data.articles;
+                console.log(data.articles);
+                console.log(`naya api ko data: ${nayaapi}`);
+
+
+
+                let  rows = "khali xa ";
+
+                nayaapi.forEach(singlepost => {
+
+                    rows += `<h1 style="background-color:red">${singlepost.title}</h1>
+
+                    <br> <h3 style="background-color:green">${singlepost.content}</h3>
+                    <br>  <h3 style="background-color:blue">${singlepost.description}</h3>
+                    <br> <img style="background-color:yellow" src="${singlepost.urlToImage}" alt="${singlepost.title}">
+                    <br>  <a href="${singlepost.url}">${singlepost.url}</a>
+                      <hr>
+                    `;
+
+                   
+                });
+
+                
+
+                
+                
+               //array vitra ko object
+                
+               document.getElementById('post').innerHTML = rows;  
+
+            }).catch(error=>{
+                console.log(`error aayo vanya yaha auxa ${error}`);
+            })
+
+
+
+                       
+
+
+
+
+    
+    
+    
+    
+    </script>
+
+
+
+    
+</body>
+</html>
